@@ -13,7 +13,8 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: process.env.FRONTEND_URL || "http://localhost:3000",
+    origin:
+      process.env.FRONTEND_URL || "https://ping-notification-system.vercel.app",
     methods: ["GET", "POST"],
   },
 });
